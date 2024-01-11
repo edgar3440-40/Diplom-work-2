@@ -1,0 +1,25 @@
+$colorGray: #6C757D;
+$colorGrayLight: #CED4DA;
+$colorBlue: #0D6EFD;
+
+// fonts
+
+
+$fontXXL: 40px;
+$fontXL: 28px;
+$fontL: 20px;
+$fontM: 16px;
+$fontS: 15px;
+$fontXS: 14px;
+$fontXXS: 12px;
+
+@media  screen and (max-width: 900px) {
+  $fontXXL: 34px;
+  $fontXL: 24px;
+  $fontL: 26px;
+  $fontM: 14px;
+  $fontS: 13px;
+  $fontXS: 12px;
+  $fontXXS: 10px;
+
+}

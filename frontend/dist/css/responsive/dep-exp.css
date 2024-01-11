@@ -1,0 +1,13 @@
+@media screen and (max-width: 400px) {
+  .big-container {
+    height: 600px;
+  }
+  .main.dep-exp {
+    padding: 50px 20px 20px 20px !important;
+  }
+  .main.dep-exp .date-btn {
+    padding: 3px 8px;
+    width: 70px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,19 @@
+@media screen and (max-width: 600px) {
+  .income {
+     text-align: center !important;
+  }
+
+   .incomes {
+      justify-content: center !important;
+      align-items: center !important;
+
+     .income__item {
+       padding: 20px !important;
+       text-align: center;
+
+       .income__item--buttons {
+         justify-content: center;
+       }
+     }
+   }
+}

@@ -1,0 +1,65 @@
+@media  screen and (max-width: 1000px) {
+
+  .big-container {
+    display: block !important;
+    height: 100%;
+    overflow-x: hidden;
+  }
+
+  .sidebar {
+    position: absolute ;
+    transform: translateX(1500px) !important;
+  }
+  //
+  //.main {
+  //  width: 100%;
+  //  padding: 20px !important;
+  //}
+
+
+
+    .main-title {
+      margin: 0;
+      line-height: 1.5;
+    }
+
+
+  .burger {
+    display: block !important;
+
+    svg {
+      cursor: pointer;
+      width: 40px;
+      transition: all 300ms;
+
+      path {
+        transition: all 300ms;
+        stroke: white;
+      }
+    }
+  }
+
+  .burger:hover {
+    svg {
+
+      path {
+        stroke: #0D6EFD;
+
+      }
+    }
+  }
+
+  .main-title {
+    display: inline-block;
+  }
+
+
+  .sidebar.show {
+    transform: translateX(0) !important;
+    transition: all 400ms;
+  }
+
+
+
+
+}

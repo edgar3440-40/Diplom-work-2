@@ -1,0 +1,22 @@
+@import "variables";
+
+.menu__item.clicked ~ .categories-menu li {
+  cursor: pointer;
+}
+
+.menu__item.clicked ~ .categories-menu li:nth-child(2) {
+  background: #0D6EFD;
+
+  a {
+    color: white;
+  }
+}
+.menu__item.clicked ~ .categories-menu li:first-child {
+  cursor: pointer;
+  background: white;
+
+  a {
+    color: $colorBlue;
+
+  }
+}

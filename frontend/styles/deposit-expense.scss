@@ -1,0 +1,104 @@
+@import "variables";
+
+.main {
+  padding-right: 66px !important;
+  .two-buttons {
+    margin-bottom: 40px;
+    justify-content: left;
+  }
+
+  .dates {
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    row-gap: 5px;
+
+  }
+
+  .wrapper {
+    overflow-x: auto;
+  }
+
+  table {
+
+    width: 1101px;
+    border-collapse: collapse;
+
+
+    tbody {
+      width: 100%;
+    }
+
+    th {
+      color: #052C65;
+    }
+
+    td, th {
+      height: 50px;
+      border-bottom: 1px solid #dddddd;
+    }
+
+    td {
+      text-align: center;
+
+      &:last-child {
+        text-align: right;
+      }
+    }
+
+    th {
+      text-align: center;
+      width: 100px;
+
+      &:last-child {
+        width: 34%;
+      }
+    }
+  }
+
+  .type.deposit {
+    color: #198754;
+  }
+  .type.expense {
+    color: #DC3545;
+  }
+}
+
+.comment {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  column-gap: 10px;
+
+  & > * {
+    cursor: pointer;
+  }
+}
+
+
+  svg {
+    path {
+      transition: all 300ms;
+    }
+  }
+
+.delete:hover {
+  svg {
+    path {
+      fill: #DC3545;
+    }
+  }
+}
+
+.edit:hover {
+  svg {
+    path {
+      fill: #198754;
+    }
+  }
+}
+
+.number {
+  font-weight: 700;
+}
+
+

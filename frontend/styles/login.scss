@@ -1,0 +1,89 @@
+@import "./variables";
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1024px;
+}
+
+.form {
+
+  width: 387px;
+
+  &__title {
+    color: #052C65;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: $fontXXL;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  &__inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  &__input {
+    display: flex;
+    max-height: 38px;
+    border: 1px solid #CED4DA;
+    border-radius: 5px;
+    width: 100%;
+
+    input {
+      width: 100%;
+      outline: 0;
+      border: none;
+      box-sizing: border-box;
+      padding: 0 10px;
+
+      &::placeholder {
+        font-size: $fontS;
+      }
+    }
+  }
+
+  &__logo {
+    text-align: center;
+  }
+
+  &__checkbox {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+
+    label {
+      font-size: $fontXXS;
+    }
+  }
+
+  .submitBtn {
+    margin-top: 20px;
+    cursor: pointer;
+    background: #0D6EFD;
+    border: 0;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    height: 38px;
+    color: #FFF;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: $fontS;
+  }
+
+
+  .go-to-signup {
+    display: flex;
+    font-size: $fontXXS;
+    column-gap: 10px;
+
+    a {
+      color: #0D6EFD;
+    }
+  }
+}

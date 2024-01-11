@@ -1,0 +1,42 @@
+@media screen and (max-width: 1150px) {
+  .chart {
+    width: 400px !important;
+    height: 400px !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    width: 90% !important;
+    padding: 70px 20px 20px 20px;
+
+    .charts {
+      flex-direction: column!important;
+      justify-content: center;
+      align-items: center;
+      row-gap: 30px;
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 400px) {
+  .charts {
+    .chart {
+      width: 300px !important;
+      height: 300px !important;
+    }
+  }
+
+  .dates {
+    flex-wrap: wrap;
+    row-gap: 5px;
+
+
+    .date-btn {
+
+    }
+  }
+}
+

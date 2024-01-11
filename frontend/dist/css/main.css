@@ -1,0 +1,73 @@
+.main-container {
+  display: flex;
+  height: 1024px;
+}
+
+header {
+  display: none;
+}
+
+.burger {
+  display: none;
+}
+
+.charts {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main {
+  padding: 100px 94px 133px 60px;
+  flex: 1;
+}
+.main .dates {
+  display: flex;
+  column-gap: 20px;
+  margin-bottom: 140px;
+}
+.main .dates span {
+  align-self: center;
+  font-weight: 500;
+}
+.main .date-btn {
+  border-radius: 4px;
+  padding: 9px 12px;
+  border: 1px solid #6C757D;
+  color: #6c757d;
+  box-sizing: border-box;
+  width: 100px;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 300ms;
+}
+.main .date-btn:hover {
+  background: #6C757D;
+  color: white;
+}
+.main .date-btn:first-child {
+  background: #6C757D;
+  color: white;
+}
+
+.chart {
+  width: 438px !important;
+  height: 444px !important;
+}
+
+/*#main {*/
+/*  background: #0D6EFD;*/
+/*}*/
+/*#main a {*/
+/*  color: white;*/
+/*}*/
+#main a svg path {
+  fill: white;
+}
+
+.date {
+  color: #6C757D;
+  align-self: center;
+  font-weight: 500;
+}

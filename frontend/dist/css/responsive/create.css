@@ -1,0 +1,18 @@
+@media screen and (max-width: 450px) {
+  .container {
+    padding: 70px 15px 15px 15px !important;
+    height: 400px;
+  }
+  .container .create-deposit .component-input.create-deposit-input {
+    width: 100% !important;
+  }
+  .container h1 {
+    font-size: 34px;
+  }
+  .create-deposit {
+    text-align: center !important;
+  }
+  .create-deposit .two-buttons {
+    justify-content: center !important;
+  }
+}
