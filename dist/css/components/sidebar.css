@@ -1,0 +1,168 @@
+header {
+  width: 100% !important;
+}
+
+ul, ol {
+  padding: 0;
+}
+
+.sidebar {
+  display: inline-block;
+  width: 220px;
+  max-width: 220px;
+  min-width: 220px;
+  height: 100%;
+  border-right: 1px solid #D9D9D9;
+  color: #052C65;
+  background: white;
+}
+
+.sidebar .sidebar__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar .logo__container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.sidebar ul li {
+  list-style: none;
+}
+
+.sidebar ul a {
+  text-decoration: none;
+}
+
+.sidebar .menu {
+  padding: 0 20px;
+  margin-top: 60px;
+  font-size: 14px;
+}
+
+.sidebar .menu__item {
+  border-radius: 5px;
+  padding: 12px 16px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.sidebar .menu__item.clicked {
+  background: #0D6EFD;
+}
+
+.sidebar .menu__item.clicked span {
+  color: white;
+}
+
+.sidebar .menu__item.clicked svg path {
+  fill: white;
+}
+
+.sidebar .menu__link {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+  width: 100%;
+}
+
+.sidebar .menu__link.list {
+  justify-content: space-between;
+}
+
+.sidebar .categories-menu {
+  height: 0;
+  visibility: hidden;
+  transition: all 300ms;
+}
+
+.categories-menu.show {
+  border: 1px solid #0D6EFD;
+  border-radius: 5px;
+}
+
+.sidebar .categories-menu li {
+  padding: 12px 16px;
+}
+
+.sidebar .categories-menu.show {
+  height: auto;
+  visibility: visible;
+}
+
+.sidebar .logo {
+  width: 98px;
+}
+
+.sidebar .arrow {
+  transition: 300ms;
+}
+
+.sidebar .arrow.show {
+  transform: rotate(90deg);
+}
+
+.sidebar .balance {
+  font-weight: 500;
+  color: #052C65;
+  padding: 0 20px 20px 20px;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.sidebar .balance span {
+  color: #0D6EFD;
+}
+
+.sidebar .identity {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  padding: 0 20px 40px 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .big-container {
+    display: block !important;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  .sidebar {
+    position: absolute;
+    transform: translateX(1500px) !important;
+  }
+  .main-title {
+    margin: 0;
+    line-height: 1.5;
+  }
+  .burger {
+    display: block !important;
+  }
+  .burger svg {
+    cursor: pointer;
+    width: 40px;
+    transition: all 300ms;
+  }
+  .burger svg path {
+    transition: all 300ms;
+    stroke: white;
+  }
+  .burger:hover svg path {
+    stroke: #0D6EFD;
+  }
+  .main-title {
+    display: inline-block;
+  }
+  .sidebar.show {
+    transform: translateX(0) !important;
+    transition: all 400ms;
+  }
+}

@@ -1,0 +1,87 @@
+@import "variables";
+
+.main-container {
+  display: flex;
+  height: 1024px;
+}
+
+header {
+  display: none;
+}
+
+.burger {
+  display: none;
+}
+
+.charts {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.main {
+  padding: 100px 94px 133px 60px;
+  flex: 1;
+
+
+  .dates {
+    display: flex;
+    column-gap: 20px;
+    margin-bottom: 140px;
+    span {
+      align-self: center;
+      font-weight: 500;
+
+    }
+  }
+
+  .date-btn {
+    border-radius: 4px;
+    padding: 9px 12px;
+    border: 1px solid #6C757D;
+    color: #6c757d;
+    box-sizing: border-box;
+    width: 100px;
+    background: transparent;
+    font-size: $fontM;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 300ms;
+
+    &:hover {
+      background: #6C757D;
+      color: white;
+    }
+
+    &:first-child {
+      background: #6C757D;
+      color: white;
+    }
+  }
+}
+
+.chart {
+  width: 438px !important;
+  height: 444px !important;
+}
+
+#main {
+  background: $colorBlue;
+
+  a {
+    color: white;
+
+    svg {
+      path {
+        fill: white;
+      }
+    }
+  }
+}
+
+.date {
+  color: #6C757D;
+  align-self: center;
+  font-weight: 500;
+}
+
